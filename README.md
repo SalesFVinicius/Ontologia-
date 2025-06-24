@@ -1,2 +1,6 @@
 # Ontologia-Hiper
 O sensoriamento remoto hiperespectral de rochas tem sido amplamente utilizado na geologia como uma técnica rápida e não destrutiva para a caracterização mineralógica. Este trabalho propõe o desenvolvimento de uma ferramenta computacional para classificar amostras de rochas sedimentares com base em suas respostas espectrais. A solução extrai automaticamente feições de absorção dos espectros e consulta a ontologia SpectralMine, que formaliza a relação entre minerais e suas assinaturas espectrais. Utilizando o reasoner HermiT, são realizadas inferências automáticas para apoiar a identificação mineralógica. A solução computacional proposta por este estudo foi capaz de classificar corretamente a composição mineralógica de amostras de rochas conhecidas e provou ser uma ferramenta útil e de fácil compreensão para aqueles que possuem pouca familiaridade com a área de espectroscopia de rochas.
+
+Main.py: Orquestra o fluxo de trabalho, chamando as funções dos outros scripts. 
+Spectrum_Deep.py: Responsável pelo carregamento, pré-processamento e análise de dados espectrais.
+Ontologia.py: Gerencia a interação com o arquivo de ontologia, permitindo a adição e o salvamento de dados.
