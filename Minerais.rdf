@@ -1,0 +1,946 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.exemplo.org/minerais#"
+     xml:base="http://www.exemplo.org/minerais"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.exemplo.org/minerais"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.exemplo.org/minerais#pertenceAoAfloramento -->
+
+    <owl:ObjectProperty rdf:about="http://www.exemplo.org/minerais#pertenceAoAfloramento">
+        <rdfs:domain rdf:resource="http://www.exemplo.org/minerais#Amostra"/>
+        <rdfs:range rdf:resource="http://www.exemplo.org/minerais#Afloramento"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#temBandaAbsorcao -->
+
+    <owl:ObjectProperty rdf:about="http://www.exemplo.org/minerais#temBandaAbsorcao">
+        <rdfs:domain rdf:resource="http://www.exemplo.org/minerais#Amostra"/>
+        <rdfs:range rdf:resource="http://www.exemplo.org/minerais#Banda_Absorcao"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Afloramento -->
+
+    <owl:Class rdf:about="http://www.exemplo.org/minerais#Afloramento"/>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Albita -->
+
+    <owl:Class rdf:about="http://www.exemplo.org/minerais#Albita">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.exemplo.org/minerais#temBandaAbsorcao"/>
+                        <owl:someValuesFrom rdf:resource="http://www.exemplo.org/minerais#Banda_1410"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.exemplo.org/minerais#temBandaAbsorcao"/>
+                        <owl:someValuesFrom rdf:resource="http://www.exemplo.org/minerais#Banda_1909"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.exemplo.org/minerais#temBandaAbsorcao"/>
+                        <owl:someValuesFrom rdf:resource="http://www.exemplo.org/minerais#Banda_2196"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.exemplo.org/minerais#Tectossilicatos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Amostra -->
+
+    <owl:Class rdf:about="http://www.exemplo.org/minerais#Amostra"/>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Antigorita -->
+
+    <owl:Class rdf:about="http://www.exemplo.org/minerais#Antigorita">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.exemplo.org/minerais#temBandaAbsorcao"/>
+                        <owl:someValuesFrom rdf:resource="http://www.exemplo.org/minerais#Banda_1396"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.exemplo.org/minerais#temBandaAbsorcao"/>
+                        <owl:someValuesFrom rdf:resource="http://www.exemplo.org/minerais#Banda_1915"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.exemplo.org/minerais#temBandaAbsorcao"/>
+                        <owl:someValuesFrom rdf:resource="http://www.exemplo.org/minerais#Banda_1970"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.exemplo.org/minerais#temBandaAbsorcao"/>
+                        <owl:someValuesFrom rdf:resource="http://www.exemplo.org/minerais#Banda_2325"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.exemplo.org/minerais#Filossilicatados"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Banda_1396 -->
+
+    <owl:Class rdf:about="http://www.exemplo.org/minerais#Banda_1396">
+        <rdfs:subClassOf rdf:resource="http://www.exemplo.org/minerais#Banda_Absorcao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Banda_1403 -->
+
+    <owl:Class rdf:about="http://www.exemplo.org/minerais#Banda_1403">
+        <rdfs:subClassOf rdf:resource="http://www.exemplo.org/minerais#Banda_Absorcao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Banda_1409 -->
+
+    <owl:Class rdf:about="http://www.exemplo.org/minerais#Banda_1409">
+        <rdfs:subClassOf rdf:resource="http://www.exemplo.org/minerais#Banda_Absorcao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Banda_1410 -->
+
+    <owl:Class rdf:about="http://www.exemplo.org/minerais#Banda_1410">
+        <rdfs:subClassOf rdf:resource="http://www.exemplo.org/minerais#Banda_Absorcao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Banda_1413 -->
+
+    <owl:Class rdf:about="http://www.exemplo.org/minerais#Banda_1413">
+        <rdfs:subClassOf rdf:resource="http://www.exemplo.org/minerais#Banda_Absorcao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Banda_1414 -->
+
+    <owl:Class rdf:about="http://www.exemplo.org/minerais#Banda_1414">
+        <rdfs:subClassOf rdf:resource="http://www.exemplo.org/minerais#Banda_Absorcao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Banda_1909 -->
+
+    <owl:Class rdf:about="http://www.exemplo.org/minerais#Banda_1909">
+        <rdfs:subClassOf rdf:resource="http://www.exemplo.org/minerais#Banda_Absorcao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Banda_1910 -->
+
+    <owl:Class rdf:about="http://www.exemplo.org/minerais#Banda_1910">
+        <rdfs:subClassOf rdf:resource="http://www.exemplo.org/minerais#Banda_Absorcao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Banda_1915 -->
+
+    <owl:Class rdf:about="http://www.exemplo.org/minerais#Banda_1915">
+        <rdfs:subClassOf rdf:resource="http://www.exemplo.org/minerais#Banda_Absorcao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Banda_1919 -->
+
+    <owl:Class rdf:about="http://www.exemplo.org/minerais#Banda_1919">
+        <rdfs:subClassOf rdf:resource="http://www.exemplo.org/minerais#Banda_Absorcao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Banda_1920 -->
+
+    <owl:Class rdf:about="http://www.exemplo.org/minerais#Banda_1920">
+        <rdfs:subClassOf rdf:resource="http://www.exemplo.org/minerais#Banda_Absorcao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Banda_1928 -->
+
+    <owl:Class rdf:about="http://www.exemplo.org/minerais#Banda_1928">
+        <rdfs:subClassOf rdf:resource="http://www.exemplo.org/minerais#Banda_Absorcao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Banda_1970 -->
+
+    <owl:Class rdf:about="http://www.exemplo.org/minerais#Banda_1970">
+        <rdfs:subClassOf rdf:resource="http://www.exemplo.org/minerais#Banda_Absorcao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Banda_2163 -->
+
+    <owl:Class rdf:about="http://www.exemplo.org/minerais#Banda_2163">
+        <rdfs:subClassOf rdf:resource="http://www.exemplo.org/minerais#Banda_Absorcao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Banda_2166 -->
+
+    <owl:Class rdf:about="http://www.exemplo.org/minerais#Banda_2166">
+        <rdfs:subClassOf rdf:resource="http://www.exemplo.org/minerais#Banda_Absorcao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Banda_2196 -->
+
+    <owl:Class rdf:about="http://www.exemplo.org/minerais#Banda_2196">
+        <rdfs:subClassOf rdf:resource="http://www.exemplo.org/minerais#Banda_Absorcao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Banda_2205 -->
+
+    <owl:Class rdf:about="http://www.exemplo.org/minerais#Banda_2205">
+        <rdfs:subClassOf rdf:resource="http://www.exemplo.org/minerais#Banda_Absorcao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Banda_2311 -->
+
+    <owl:Class rdf:about="http://www.exemplo.org/minerais#Banda_2311">
+        <rdfs:subClassOf rdf:resource="http://www.exemplo.org/minerais#Banda_Absorcao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Banda_2325 -->
+
+    <owl:Class rdf:about="http://www.exemplo.org/minerais#Banda_2325">
+        <rdfs:subClassOf rdf:resource="http://www.exemplo.org/minerais#Banda_Absorcao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Banda_2383 -->
+
+    <owl:Class rdf:about="http://www.exemplo.org/minerais#Banda_2383">
+        <rdfs:subClassOf rdf:resource="http://www.exemplo.org/minerais#Banda_Absorcao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Banda_2389 -->
+
+    <owl:Class rdf:about="http://www.exemplo.org/minerais#Banda_2389">
+        <rdfs:subClassOf rdf:resource="http://www.exemplo.org/minerais#Banda_Absorcao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Banda_400 -->
+
+    <owl:Class rdf:about="http://www.exemplo.org/minerais#Banda_400">
+        <rdfs:subClassOf rdf:resource="http://www.exemplo.org/minerais#Banda_Absorcao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Banda_613 -->
+
+    <owl:Class rdf:about="http://www.exemplo.org/minerais#Banda_613">
+        <rdfs:subClassOf rdf:resource="http://www.exemplo.org/minerais#Banda_Absorcao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Banda_622 -->
+
+    <owl:Class rdf:about="http://www.exemplo.org/minerais#Banda_622">
+        <rdfs:subClassOf rdf:resource="http://www.exemplo.org/minerais#Banda_Absorcao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Banda_630 -->
+
+    <owl:Class rdf:about="http://www.exemplo.org/minerais#Banda_630">
+        <rdfs:subClassOf rdf:resource="http://www.exemplo.org/minerais#Banda_Absorcao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Banda_Absorcao -->
+
+    <owl:Class rdf:about="http://www.exemplo.org/minerais#Banda_Absorcao"/>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Caulinita -->
+
+    <owl:Class rdf:about="http://www.exemplo.org/minerais#Caulinita">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:complementOf>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.exemplo.org/minerais#temBandaAbsorcao"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.exemplo.org/minerais#Banda_2163"/>
+                                    </owl:Restriction>
+                                </owl:complementOf>
+                            </owl:Class>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.exemplo.org/minerais#temBandaAbsorcao"/>
+                                <owl:someValuesFrom rdf:resource="http://www.exemplo.org/minerais#Banda_2163"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.exemplo.org/minerais#temBandaAbsorcao"/>
+                        <owl:someValuesFrom rdf:resource="http://www.exemplo.org/minerais#Banda_1413"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.exemplo.org/minerais#temBandaAbsorcao"/>
+                        <owl:someValuesFrom rdf:resource="http://www.exemplo.org/minerais#Banda_2205"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.exemplo.org/minerais#Filossilicatados"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Clorita -->
+
+    <owl:Class rdf:about="http://www.exemplo.org/minerais#Clorita">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.exemplo.org/minerais#temBandaAbsorcao"/>
+                <owl:someValuesFrom rdf:resource="http://www.exemplo.org/minerais#Banda_2325"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.exemplo.org/minerais#Filossilicatados"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Filossilicatados -->
+
+    <owl:Class rdf:about="http://www.exemplo.org/minerais#Filossilicatados">
+        <rdfs:subClassOf rdf:resource="http://www.exemplo.org/minerais#Silicatados"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Fuchsita -->
+
+    <owl:Class rdf:about="http://www.exemplo.org/minerais#Fuchsita">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.exemplo.org/minerais#temBandaAbsorcao"/>
+                        <owl:someValuesFrom rdf:resource="http://www.exemplo.org/minerais#Banda_1409"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.exemplo.org/minerais#temBandaAbsorcao"/>
+                        <owl:someValuesFrom rdf:resource="http://www.exemplo.org/minerais#Banda_2196"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.exemplo.org/minerais#temBandaAbsorcao"/>
+                        <owl:someValuesFrom rdf:resource="http://www.exemplo.org/minerais#Banda_630"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.exemplo.org/minerais#Filossilicatados"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Lazurita -->
+
+    <owl:Class rdf:about="http://www.exemplo.org/minerais#Lazurita">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.exemplo.org/minerais#temBandaAbsorcao"/>
+                        <owl:someValuesFrom rdf:resource="http://www.exemplo.org/minerais#Banda_1920"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.exemplo.org/minerais#temBandaAbsorcao"/>
+                        <owl:someValuesFrom rdf:resource="http://www.exemplo.org/minerais#Banda_400"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.exemplo.org/minerais#temBandaAbsorcao"/>
+                        <owl:someValuesFrom rdf:resource="http://www.exemplo.org/minerais#Banda_613"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.exemplo.org/minerais#Tectossilicatos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Lepidolita -->
+
+    <owl:Class rdf:about="http://www.exemplo.org/minerais#Lepidolita">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.exemplo.org/minerais#temBandaAbsorcao"/>
+                        <owl:someValuesFrom rdf:resource="http://www.exemplo.org/minerais#Banda_1410"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.exemplo.org/minerais#temBandaAbsorcao"/>
+                        <owl:someValuesFrom rdf:resource="http://www.exemplo.org/minerais#Banda_2205"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.exemplo.org/minerais#Filossilicatados"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Microclinio -->
+
+    <owl:Class rdf:about="http://www.exemplo.org/minerais#Microclinio">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.exemplo.org/minerais#temBandaAbsorcao"/>
+                <owl:someValuesFrom rdf:resource="http://www.exemplo.org/minerais#Banda_1920"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.exemplo.org/minerais#Tectossilicatos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Mineral -->
+
+    <owl:Class rdf:about="http://www.exemplo.org/minerais#Mineral"/>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Montmorillonita -->
+
+    <owl:Class rdf:about="http://www.exemplo.org/minerais#Montmorillonita">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.exemplo.org/minerais#temBandaAbsorcao"/>
+                        <owl:someValuesFrom rdf:resource="http://www.exemplo.org/minerais#Banda_1414"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.exemplo.org/minerais#temBandaAbsorcao"/>
+                        <owl:someValuesFrom rdf:resource="http://www.exemplo.org/minerais#Banda_1910"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.exemplo.org/minerais#temBandaAbsorcao"/>
+                        <owl:someValuesFrom rdf:resource="http://www.exemplo.org/minerais#Banda_2205"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.exemplo.org/minerais#Filossilicatados"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Muscovita -->
+
+    <owl:Class rdf:about="http://www.exemplo.org/minerais#Muscovita">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.exemplo.org/minerais#temBandaAbsorcao"/>
+                        <owl:someValuesFrom rdf:resource="http://www.exemplo.org/minerais#Banda_1410"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.exemplo.org/minerais#temBandaAbsorcao"/>
+                        <owl:someValuesFrom rdf:resource="http://www.exemplo.org/minerais#Banda_2205"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.exemplo.org/minerais#Filossilicatados"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Ortoclasio -->
+
+    <owl:Class rdf:about="http://www.exemplo.org/minerais#Ortoclasio">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.exemplo.org/minerais#temBandaAbsorcao"/>
+                <owl:someValuesFrom rdf:resource="http://www.exemplo.org/minerais#Banda_1920"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.exemplo.org/minerais#Tectossilicatos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Pirofilia -->
+
+    <owl:Class rdf:about="http://www.exemplo.org/minerais#Pirofilia">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.exemplo.org/minerais#temBandaAbsorcao"/>
+                        <owl:someValuesFrom rdf:resource="http://www.exemplo.org/minerais#Banda_1396"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.exemplo.org/minerais#temBandaAbsorcao"/>
+                        <owl:someValuesFrom rdf:resource="http://www.exemplo.org/minerais#Banda_2166"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.exemplo.org/minerais#Filossilicatados"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Silicatados -->
+
+    <owl:Class rdf:about="http://www.exemplo.org/minerais#Silicatados">
+        <rdfs:subClassOf rdf:resource="http://www.exemplo.org/minerais#Mineral"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Sodalita -->
+
+    <owl:Class rdf:about="http://www.exemplo.org/minerais#Sodalita">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.exemplo.org/minerais#temBandaAbsorcao"/>
+                        <owl:someValuesFrom rdf:resource="http://www.exemplo.org/minerais#Banda_1919"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.exemplo.org/minerais#temBandaAbsorcao"/>
+                        <owl:someValuesFrom rdf:resource="http://www.exemplo.org/minerais#Banda_400"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.exemplo.org/minerais#temBandaAbsorcao"/>
+                        <owl:someValuesFrom rdf:resource="http://www.exemplo.org/minerais#Banda_622"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.exemplo.org/minerais#Tectossilicatos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Talco_Verde -->
+
+    <owl:Class rdf:about="http://www.exemplo.org/minerais#Talco_Verde">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.exemplo.org/minerais#temBandaAbsorcao"/>
+                        <owl:someValuesFrom rdf:resource="http://www.exemplo.org/minerais#Banda_1396"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.exemplo.org/minerais#temBandaAbsorcao"/>
+                        <owl:someValuesFrom rdf:resource="http://www.exemplo.org/minerais#Banda_2311"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.exemplo.org/minerais#temBandaAbsorcao"/>
+                        <owl:someValuesFrom rdf:resource="http://www.exemplo.org/minerais#Banda_2389"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.exemplo.org/minerais#Filossilicatados"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Tectossilicatos -->
+
+    <owl:Class rdf:about="http://www.exemplo.org/minerais#Tectossilicatos">
+        <rdfs:subClassOf rdf:resource="http://www.exemplo.org/minerais#Silicatados"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Afloramento_X -->
+
+    <owl:NamedIndividual rdf:about="http://www.exemplo.org/minerais#Afloramento_X">
+        <rdf:type rdf:resource="http://www.exemplo.org/minerais#Afloramento"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Afloramento_Y -->
+
+    <owl:NamedIndividual rdf:about="http://www.exemplo.org/minerais#Afloramento_Y">
+        <rdf:type rdf:resource="http://www.exemplo.org/minerais#Afloramento"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Afloramento_Z -->
+
+    <owl:NamedIndividual rdf:about="http://www.exemplo.org/minerais#Afloramento_Z">
+        <rdf:type rdf:resource="http://www.exemplo.org/minerais#Afloramento"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Amostra_001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.exemplo.org/minerais#Amostra_001">
+        <rdf:type rdf:resource="http://www.exemplo.org/minerais#Amostra"/>
+        <pertenceAoAfloramento rdf:resource="http://www.exemplo.org/minerais#Afloramento_X"/>
+        <temBandaAbsorcao rdf:resource="http://www.exemplo.org/minerais#Banda1414"/>
+        <temBandaAbsorcao rdf:resource="http://www.exemplo.org/minerais#Banda1910"/>
+        <temBandaAbsorcao rdf:resource="http://www.exemplo.org/minerais#Banda2205"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Amostra_002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.exemplo.org/minerais#Amostra_002">
+        <rdf:type rdf:resource="http://www.exemplo.org/minerais#Amostra"/>
+        <pertenceAoAfloramento rdf:resource="http://www.exemplo.org/minerais#Afloramento_Z"/>
+        <temBandaAbsorcao rdf:resource="http://www.exemplo.org/minerais#Banda1413"/>
+        <temBandaAbsorcao rdf:resource="http://www.exemplo.org/minerais#Banda2163"/>
+        <temBandaAbsorcao rdf:resource="http://www.exemplo.org/minerais#Banda2205"/>
+        <temBandaAbsorcao rdf:resource="http://www.exemplo.org/minerais#Banda2383"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Amostra_003 -->
+
+    <owl:NamedIndividual rdf:about="http://www.exemplo.org/minerais#Amostra_003">
+        <rdf:type rdf:resource="http://www.exemplo.org/minerais#Amostra"/>
+        <pertenceAoAfloramento rdf:resource="http://www.exemplo.org/minerais#Afloramento_Y"/>
+        <temBandaAbsorcao rdf:resource="http://www.exemplo.org/minerais#Banda2325"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Amostra_004 -->
+
+    <owl:NamedIndividual rdf:about="http://www.exemplo.org/minerais#Amostra_004">
+        <rdf:type rdf:resource="http://www.exemplo.org/minerais#Amostra"/>
+        <pertenceAoAfloramento rdf:resource="http://www.exemplo.org/minerais#Afloramento_X"/>
+        <temBandaAbsorcao rdf:resource="http://www.exemplo.org/minerais#Banda2325"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Amostra_005 -->
+
+    <owl:NamedIndividual rdf:about="http://www.exemplo.org/minerais#Amostra_005">
+        <rdf:type rdf:resource="http://www.exemplo.org/minerais#Amostra"/>
+        <pertenceAoAfloramento rdf:resource="http://www.exemplo.org/minerais#Afloramento_X"/>
+        <temBandaAbsorcao rdf:resource="http://www.exemplo.org/minerais#Banda1410"/>
+        <temBandaAbsorcao rdf:resource="http://www.exemplo.org/minerais#Banda2205"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Amostra_006 -->
+
+    <owl:NamedIndividual rdf:about="http://www.exemplo.org/minerais#Amostra_006">
+        <rdf:type rdf:resource="http://www.exemplo.org/minerais#Amostra"/>
+        <pertenceAoAfloramento rdf:resource="http://www.exemplo.org/minerais#Afloramento_Z"/>
+        <temBandaAbsorcao rdf:resource="http://www.exemplo.org/minerais#Banda1920"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Amostra_X23 -->
+
+    <owl:NamedIndividual rdf:about="http://www.exemplo.org/minerais#Amostra_X23">
+        <rdf:type rdf:resource="http://www.exemplo.org/minerais#Amostra"/>
+        <pertenceAoAfloramento rdf:resource="http://www.exemplo.org/minerais#Afloramento_Y"/>
+        <temBandaAbsorcao rdf:resource="http://www.exemplo.org/minerais#Banda2325"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Banda1396 -->
+
+    <owl:NamedIndividual rdf:about="http://www.exemplo.org/minerais#Banda1396">
+        <rdf:type rdf:resource="http://www.exemplo.org/minerais#Banda_1396"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Banda1403 -->
+
+    <owl:NamedIndividual rdf:about="http://www.exemplo.org/minerais#Banda1403">
+        <rdf:type rdf:resource="http://www.exemplo.org/minerais#Banda_1403"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Banda1409 -->
+
+    <owl:NamedIndividual rdf:about="http://www.exemplo.org/minerais#Banda1409">
+        <rdf:type rdf:resource="http://www.exemplo.org/minerais#Banda_1409"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Banda1410 -->
+
+    <owl:NamedIndividual rdf:about="http://www.exemplo.org/minerais#Banda1410">
+        <rdf:type rdf:resource="http://www.exemplo.org/minerais#Banda_1410"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Banda1413 -->
+
+    <owl:NamedIndividual rdf:about="http://www.exemplo.org/minerais#Banda1413">
+        <rdf:type rdf:resource="http://www.exemplo.org/minerais#Banda_1413"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Banda1414 -->
+
+    <owl:NamedIndividual rdf:about="http://www.exemplo.org/minerais#Banda1414">
+        <rdf:type rdf:resource="http://www.exemplo.org/minerais#Banda_1414"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Banda1909 -->
+
+    <owl:NamedIndividual rdf:about="http://www.exemplo.org/minerais#Banda1909">
+        <rdf:type rdf:resource="http://www.exemplo.org/minerais#Banda_1909"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Banda1910 -->
+
+    <owl:NamedIndividual rdf:about="http://www.exemplo.org/minerais#Banda1910">
+        <rdf:type rdf:resource="http://www.exemplo.org/minerais#Banda_1910"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Banda1915 -->
+
+    <owl:NamedIndividual rdf:about="http://www.exemplo.org/minerais#Banda1915">
+        <rdf:type rdf:resource="http://www.exemplo.org/minerais#Banda_1915"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Banda1919 -->
+
+    <owl:NamedIndividual rdf:about="http://www.exemplo.org/minerais#Banda1919">
+        <rdf:type rdf:resource="http://www.exemplo.org/minerais#Banda_1919"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Banda1920 -->
+
+    <owl:NamedIndividual rdf:about="http://www.exemplo.org/minerais#Banda1920">
+        <rdf:type rdf:resource="http://www.exemplo.org/minerais#Banda_1920"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Banda1928 -->
+
+    <owl:NamedIndividual rdf:about="http://www.exemplo.org/minerais#Banda1928">
+        <rdf:type rdf:resource="http://www.exemplo.org/minerais#Banda_1928"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Banda1970 -->
+
+    <owl:NamedIndividual rdf:about="http://www.exemplo.org/minerais#Banda1970">
+        <rdf:type rdf:resource="http://www.exemplo.org/minerais#Banda_1970"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Banda2163 -->
+
+    <owl:NamedIndividual rdf:about="http://www.exemplo.org/minerais#Banda2163">
+        <rdf:type rdf:resource="http://www.exemplo.org/minerais#Banda_2163"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Banda2166 -->
+
+    <owl:NamedIndividual rdf:about="http://www.exemplo.org/minerais#Banda2166">
+        <rdf:type rdf:resource="http://www.exemplo.org/minerais#Banda_2166"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Banda2196 -->
+
+    <owl:NamedIndividual rdf:about="http://www.exemplo.org/minerais#Banda2196">
+        <rdf:type rdf:resource="http://www.exemplo.org/minerais#Banda_2196"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Banda2205 -->
+
+    <owl:NamedIndividual rdf:about="http://www.exemplo.org/minerais#Banda2205">
+        <rdf:type rdf:resource="http://www.exemplo.org/minerais#Banda_2205"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Banda2311 -->
+
+    <owl:NamedIndividual rdf:about="http://www.exemplo.org/minerais#Banda2311">
+        <rdf:type rdf:resource="http://www.exemplo.org/minerais#Banda_2311"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Banda2325 -->
+
+    <owl:NamedIndividual rdf:about="http://www.exemplo.org/minerais#Banda2325">
+        <rdf:type rdf:resource="http://www.exemplo.org/minerais#Banda_2325"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Banda2383 -->
+
+    <owl:NamedIndividual rdf:about="http://www.exemplo.org/minerais#Banda2383">
+        <rdf:type rdf:resource="http://www.exemplo.org/minerais#Banda_2383"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Banda400 -->
+
+    <owl:NamedIndividual rdf:about="http://www.exemplo.org/minerais#Banda400">
+        <rdf:type rdf:resource="http://www.exemplo.org/minerais#Banda_400"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Banda613 -->
+
+    <owl:NamedIndividual rdf:about="http://www.exemplo.org/minerais#Banda613">
+        <rdf:type rdf:resource="http://www.exemplo.org/minerais#Banda_613"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Banda622 -->
+
+    <owl:NamedIndividual rdf:about="http://www.exemplo.org/minerais#Banda622">
+        <rdf:type rdf:resource="http://www.exemplo.org/minerais#Banda_622"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Banda630 -->
+
+    <owl:NamedIndividual rdf:about="http://www.exemplo.org/minerais#Banda630">
+        <rdf:type rdf:resource="http://www.exemplo.org/minerais#Banda_630"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.exemplo.org/minerais#Banda_2389 -->
+
+    <owl:NamedIndividual rdf:about="http://www.exemplo.org/minerais#Banda_2389">
+        <rdf:type rdf:resource="http://www.exemplo.org/minerais#Banda_2389"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
